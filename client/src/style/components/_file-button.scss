@@ -1,0 +1,49 @@
+@use '../global/mixins' as m;
+
+
+.file-button {
+    @include m.reset-button;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: inherit;
+    font-size: 14px;
+    white-space: nowrap;
+
+    &:hover {
+        background-color: var(--button-tab-bg-hover-color);
+    }
+
+    &:focus-visible {
+        outline: none;
+        background-color: var(--button-tab-bg-focus-color);
+    }
+
+    &:active {
+        background-color: var(--button-tab-bg-active-color);
+    }
+
+    &--explorer {
+        padding: 6px 16px;
+
+    }
+
+    &--editor {
+        padding: 5px 20px;
+
+        @include m.viewport-sm {
+            padding: 5px 15px;
+        }
+    }
+
+    &--is-active {
+        border-top: 2px solid var(--title-color);
+        color: var(--file-button-is-ative, inherit);
+    }
+
+    &__text {
+        line-height: 1;
+    }
+}

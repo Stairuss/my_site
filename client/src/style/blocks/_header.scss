@@ -1,0 +1,112 @@
+@use '../global/mixins' as m;
+@use '../global/variables' as v;
+
+
+$header-height: 30px;
+
+.header {
+    $root: '.header';
+
+    background-color: var(--header-bg-color);
+    color: var(--header-text-color, inherit);
+
+    &__wrapper {
+        height: $header-height;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__logo-link {
+        display: flex;
+        align-items: center;
+        transition: opacity v.$transistion;
+
+        &:hover {
+            opacity: .7;
+        }
+
+        &:focus-visible {
+            outline: none;
+            opacity: .7;
+        }
+
+        &:active {
+            opacity: 1;
+        }
+    }
+
+    &__titlebar {
+        height: 100%;
+        display: flex;
+        gap: 20px;
+    }
+
+    &__menu {
+        @include m.reset-list;
+        display: flex;
+        gap: 20px;
+
+        &-item {
+            display: flex;
+            align-items: center;
+
+            @media (max-width: 430px) {
+                display: none;
+            }
+
+            &--with-button {
+
+                @media (max-width: 430px) {
+                    display: block;
+                }
+            }
+        }        
+
+        &-button-terminal {
+            @include m.reset-button;
+            height: 100%;
+            padding: 5px;
+            background-color: var(--button-bg-color);
+
+            .header .header__menu-item & {
+                color: var(--button-text-color, inherit);
+            }
+
+            &:hover {
+                background-color: var(--button-hover-bg-color);
+            }
+
+            &:focus-visible {
+                outline: none;
+                background-color: var(--button-focus-bg-color);
+            }
+
+            &:active {
+                background-color: var(--button-active-bg-color);
+            }
+        }
+    }
+
+    #{$root}-element {
+        margin: 0;
+        color: inherit;
+        font-size: 14px;
+    }
+
+
+    &__title-container {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+
+        @include m.viewport-sm {
+            display: none;
+        }
+    }
+
+    &__title {
+        padding: 0 5px;
+        font-weight: 400;
+    }
+}

@@ -1,0 +1,29 @@
+.loader {
+    display: none;
+    width: 15px;
+    height: 15px;
+    border: 1px solid var(--loader-color);       
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    animation: rotation 1s linear infinite;
+
+    &--terminal {        
+        width: 12px;
+        height: 12px;
+        margin-bottom: 5px;
+    }
+
+    &--is-active {
+        display: inline-block;
+    }
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

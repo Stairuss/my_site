@@ -1,0 +1,28 @@
+@use '../blocks/editor' as *;
+
+.vertical-line {
+    position: absolute;
+    width: 10px;
+    height: 100%;
+    top: 0;
+    z-index: -1;
+
+    &--sidebar {
+        left: 0;
+        transform: translateX(-100%);
+        background-color: var(--sidebar-bg-color);
+    }
+
+    &--editor {
+        right: 0;
+        transform: translateX(100%);
+        background-color: var(--main-bg-color);        
+    }
+
+    &--editor-tabs-bar {
+        height: $tabs-bar-height;
+        right: 0;
+        transform: translateX(100%);
+        background-color: var(--explorer-bg-color);           
+    }
+}

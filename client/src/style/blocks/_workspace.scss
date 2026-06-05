@@ -1,0 +1,19 @@
+@use '../global/mixins' as m;
+@use '_header' as *;
+@use '_footer' as *;
+
+
+.workspace {    
+    $height: calc(100vh - $header-height - $footer-height);    
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 60px minmax(max-content, min(400px, 18vw)) 1fr;
+        grid-template-rows: minmax(auto, $height);
+        height: $height;
+
+        @include m.viewport-md {
+            grid-template-columns: 40px 1fr;
+        }
+    }   
+}

@@ -1,0 +1,24 @@
+/* Typography */
+/* ------------------------------------ */
+$ff-ui-sans-serif: "ui-sans-serif", "system-ui", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$ff-ui-monospace: "ui-monospace", "SFMono-Regular", "Menlo", "Monaco", "Consolas", "Liberation Mono", "Courier New", "monospace";
+$ff-arial: "Arial", "Helvetica", "sans-serif";
+$ff-courier: "courier-new", "courier", "monospace";
+
+/* Other */
+/* ------------------------------------ */
+$border-radius: 10px;
+$section-tab-gap: 40px;
+$section-tab-sm-gap: 30px;
+
+/* Animation */
+/* ------------------------------------ */
+$transistion: ease-in-out 0.2s;
+
+/* Viewport */
+/* ------------------------------------ */
+$viewport-xl: 1440px; // большие экраны
+$viewport-lg: 1200px; // десктопы 
+$viewport-md: 1024px; // ноутбуки 
+$viewport-sm: 768px; // планшеты
+$viewport-xs: 360px; // телефоны

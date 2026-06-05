@@ -1,0 +1,23 @@
+@use 'variables' as v;
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: v.$ff-ui-sans-serif;
+  background-color: var(--main-bg-color); 
+  color: var(--main-text-color); 
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;  
+  object-fit: cover;
+}

@@ -1,0 +1,60 @@
+@use '../global/variables' as v;
+@use '../global/mixins' as m;
+
+
+.about-me {
+    display: none;
+    gap: v.$section-tab-gap;
+    font-family: v.$ff-ui-monospace;    
+
+    @include m.viewport-sm {
+        gap: v.$section-tab-sm-gap;
+    }
+
+    &__skills-group {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    &__description {
+        margin: 0;
+        line-height: 24px;
+    }
+
+    &__text-accent-name {
+        color: var(--about-me-text-accent-name-color, var(--title-color, inherit));
+    }
+
+    &__text-accent-skill {
+        color: var(--accent-text-skill-color);
+    }    
+
+    &__skills {
+        @include m.reset-list;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px 20px;
+
+        @include m.viewport-xs {
+            gap: 40px 4px;
+        }
+    }
+
+    &__skill {
+        width: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+
+        &-icon {
+
+            @include m.viewport-sm {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+}

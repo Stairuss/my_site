@@ -1,0 +1,30 @@
+@use '../global/mixins' as m;
+
+
+.title-content {
+    color: var(--title-color);
+    font-weight: 600;
+    font-size: 24px;
+    margin: 0;
+    white-space: wrap;
+
+    @include m.viewport-md {
+        font-size: 22px;
+    }
+
+    &--small {
+        font-size: 20px;
+
+        @include m.viewport-md {
+            font-size: 18px;
+        }
+    }
+
+    &--very-small {
+        font-size: 18px;
+
+        @include m.viewport-md {
+            font-size: 16px;
+        }
+    }
+}

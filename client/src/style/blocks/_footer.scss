@@ -1,0 +1,36 @@
+@use '../global/mixins' as m;
+@use '../global/variables' as v;
+
+$footer-height: 26px;
+
+.footer {
+    border-top: 1px solid var(--border-color);
+    background-color: var(--footer-bg-color);       
+
+    &__wrapper {
+        height: calc($footer-height - 1px);
+        display: flex;        
+        justify-content: space-between;                 
+    } 
+    
+    &__elements-group {
+        display: flex;
+        gap: 17px; 
+
+        &--right {
+            @include m.viewport-sm {
+                display: none;
+            }
+        }
+    }      
+    
+    &__element {
+        display: flex;
+        align-items: center;
+        gap: 4px;       
+        color: var(--footer-text-color, inherit);
+        font-size: 14px;
+        line-height: 1;
+        text-decoration: none;        
+    }       
+}

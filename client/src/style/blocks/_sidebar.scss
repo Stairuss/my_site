@@ -1,0 +1,72 @@
+@use '../global/mixins' as m;
+@use '../global/variables' as v;
+
+
+.sidebar {  
+    position: relative;  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 20px 10px 0;
+    background-color: var(--sidebar-bg-color);
+
+    @include m.viewport-md {
+        padding-right: 10px;
+        border-right: 1px solid var(--border-color);
+    }
+
+    &__profile-bar {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        &-button {
+            @include m.reset-button;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: color v.$transistion, transform v.$transistion;
+            color: var(--interactive-element-color);
+
+            &::before {
+                content: '';
+                position: absolute;
+                width: 40px;
+                height: 40px;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            &:hover {
+                color: var(--interactive-element-hover-color);
+
+                &:last-child {
+                    transform: rotate(90deg);
+                }
+            }
+
+            &:focus-visible {
+                outline: none;
+                color: var(--interactive-element-focus-color);
+
+                &:last-child {
+                    transform: rotate(90deg);
+                }
+            }
+
+            &:active {
+                color: var(--interactive-element-active-color);
+            }
+        }
+
+        &-icon {            
+
+            @include m.viewport-sm {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }    
+}

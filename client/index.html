@@ -1,0 +1,1096 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Авдеев Александр">
+    <meta name="description"
+        content="Александр — веб-разработчик (HTML, SCSS, TypeScript/Vite, Python FastAPI, Django/DRF, PostgreSQL). Создаю полноценные сайты и сервисы под ключ. Docker, nginx, Git. Петрозаводск.">
+    <meta name="keywords"
+        content="Python, веб-разработчик, fullstack, TypeScript, Vite, FastAPI, Django, PostgreSQL, Docker, Петрозаводск">
+    <meta property="og:title" content="Александр · Веб-разработчик">
+    <meta property="og:description"
+        content="Python · FastAPI · Django · PostgreSQL · Docker · TypeScript/Vite · HTML · SCSS">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://stairus-projects.ru">
+    <meta property="og:image" content="/my-photo.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Авдеев Александр · Веб-разработчик">    
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="canonical" href="https://stairus-projects.ru">
+    <title>Авдеев Александр · Веб-разработчик</title>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__titlebar">
+                    <a class="header__logo-link" href="https://stairus-projects.ru" aria-label="Главная странца">
+                        <svg class="header__logo-icon" width="20" height="20" aria-hidden="true">
+                            <use href="src/assets/sprite.svg#vscode-icon"></use>
+                        </svg>
+                    </a>
+                    <ul class="header__menu">
+                        <li class="header__menu-item">
+                            <p class="header__menu-text header-element">File</p>
+                        </li>
+                        <li class="header__menu-item">
+                            <p class="header__menu-text header-element">Edit</p>
+                        </li>
+                        <li class="header__menu-item">
+                            <p class="header__menu-text header-element">View</p>
+                        </li>
+                        <li class="header__menu-item">
+                            <p class="header__menu-text header-element">Go</p>
+                        </li>
+                        <li class="header__menu-item">
+                            <p class="header__menu-text header-element">Run</p>
+                        </li>
+                        <li class="header__menu-item header__menu-item--with-button">
+                            <button class="header__menu-button-terminal header-element"
+                                data-tab="terminal">Terminal</button>
+                        </li>
+                        <li class="header__menu-item">
+                            <p class="header__menu-text header-element">Help</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header__title-container">
+                    <h1 class="header__title header-element">Авдеев Александр</h1>
+                    <span class="header__subtitle header-element"> · Fullstack Developer</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="workspace">
+            <div class="container">
+                <div class="workspace__wrapper">
+
+                    <!-- sidebar -->
+                    <aside class="sidebar">
+                        <ul class="social">
+                            <li class="social__item">
+                                <a class="social__link" href="https://github.com/Stairuss" target="_blank"
+                                    rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
+                                    <svg class="social__icon" width="24" height="24" aria-hidden="true">
+                                        <use href="src/assets/sprite.svg#github-icon"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a class="social__link" href="https://gitflic.ru/user/stairus" target="_blank"
+                                    rel="noopener noreferrer" aria-label="GitFlic" title="GitFlic">
+                                    <svg class="social__icon" width="24" height="24" aria-hidden="true">
+                                        <use href="src/assets/sprite.svg#gitflic-icon"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a class="social__link" href="https://vk.com/id164444388" target="_blank"
+                                    rel="noopener noreferrer" aria-label="ВКонтакте" title="ВКонтакте">
+                                    <svg class="social__icon" width="24" height="24" aria-hidden="true">
+                                        <use href="src/assets/sprite.svg#vk-icon"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a class="social__link"
+                                    href="https://max.ru/u/f9LHodD0cOJox7khH7LCca0ZtB1Ghk5-YTCOnQKVAeoABXAAjK1X3OnrByc"
+                                    target="_blank" rel="noopener noreferrer" aria-label="Max" title="Max">
+                                    <svg class="social__icon" width="24" height="24" aria-hidden="true">
+                                        <use href="src/assets/sprite.svg#max-icon"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a class="social__link" href="mailto:pvy.vapsis@mail.ru" target="_blank"
+                                    rel="noopener noreferrer" aria-label="Почта" title="Почта">
+                                    <svg class="social__icon" width="24" height="24" aria-hidden="true">
+                                        <use href="src/assets/sprite.svg#mail-icon"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="sidebar__profile-bar">
+                            <button class="sidebar__profile-bar-button" data-tab="about-me" aria-label="Обо мне">
+                                <svg class="sidebar__profile-bar-icon" width="30" height="30" aria-hidden="true">
+                                    <use href="src/assets/sprite.svg#profile-icon"></use>
+                                </svg>
+                            </button>
+                            <button class="sidebar__profile-bar-button" data-tab="themes" aria-label="Настройки тем">
+                                <svg class="sidebar__profile-bar-icon" width="30" height="30" aria-hidden="true">
+                                    <use href="src/assets/sprite.svg#settings-icon"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="vertical-line vertical-line--sidebar" aria-hidden="true"></div>
+                    </aside>
+
+                    <!-- explorer -->
+                    <section class="explorer">
+                        <h2 class="explorer__title">Explorer</h2>
+                        <button class="explorer__toggle-button">
+                            <svg class="explorer__toggle-icon" width="16" height="16" aria-hidden="true">
+                                <use href="src/assets/sprite.svg#arrow-down-icon"></use>
+                            </svg>
+                            <span class="explorer__toggle-text">Portfolio</span>
+                        </button>
+                        <ul class="explorer__files">
+                            <li class="explorer__files-item">
+                                <button class="file-button file-button--explorer" data-tab="home">
+                                    <svg class="file-button__icon" width="19" height="19" aria-hidden="true">
+                                        <use href="src/assets/sprite.svg#type-script-icon"></use>
+                                    </svg>
+                                    <span class="file-button__text">home.ts</span>
+                                </button>
+                            </li>
+                            <li class="explorer__files-item">
+                                <button class="file-button file-button--explorer" data-tab="about-me">
+                                    <svg class="file-button__icon" width="19" height="19" aria-hidden="true">
+                                        <use href="src/assets/sprite.svg#markdown-icon"></use>
+                                    </svg>
+                                    <span class="file-button__text">about-me.md</span>
+                                </button>
+                            </li>
+                            <li class="explorer__files-item">
+                                <button class="file-button file-button--explorer" data-tab="certificates">
+                                    <svg class="file-button__icon" width="19" height="19" aria-hidden="true">
+                                        <use href="src/assets/sprite.svg#git-icon"></use>
+                                    </svg>
+                                    <span class="file-button__text">.certificates</span>
+                                </button>
+                            </li>
+                            <li class="explorer__files-item">
+                                <button class="file-button file-button--explorer" data-tab="projects">
+                                    <svg class="file-button__icon" width="19" height="19" aria-hidden="true">
+                                        <use href="src/assets/sprite.svg#python-icon"></use>
+                                    </svg>
+                                    <span class="file-button__text">projects.py</span>
+                                </button>
+                            </li>
+                            <li class="explorer__files-item">
+                                <button class="file-button file-button--explorer" data-tab="contacts">
+                                    <svg class="file-button__icon" width="19" height="19" aria-hidden="true">
+                                        <use href="src/assets/sprite.svg#html-icon"></use>
+                                    </svg>
+                                    <span class="file-button__text">contacts.html</span>
+                                </button>
+                            </li>
+                        </ul>
+
+                    </section>
+
+                    <!-- editor -->
+                    <section class="editor">
+                        <h2 class="editor__title">Editor</h2>
+                        <ul class="editor__tabs-bar">
+                            <li class="editor__tabs-bar-item">
+                                <button class="file-button file-button--editor file-button--is-active"
+                                    id="tab-button-home" data-tab="home">
+                                    <svg class="file-button__icon" width="19" height="18" aria-hidden="true">
+                                        <use href="src/assets/sprite.svg#type-script-icon"></use>
+                                    </svg>
+                                    <span class="file-button__text">home.ts</span>
+                                </button>
+                            </li>
+                            <li class="editor__tabs-bar-item">
+                                <button class="file-button file-button--editor" id="tab-button-about-me"
+                                    data-tab="about-me">
+                                    <svg class="file-button__icon" width="19" height="18" aria-hidden="true">
+                                        <use href="src/assets/sprite.svg#markdown-icon"></use>
+                                    </svg>
+                                    <span class="file-button__text">about-me.md</span>
+                                </button>
+                            </li>
+                            <li class="editor__tabs-bar-item">
+                                <button class="file-button file-button--editor" id="tab-button-certificates"
+                                    data-tab="certificates">
+                                    <svg class="file-button__icon" width="19" height="18" aria-hidden="true">
+                                        <use href="src/assets/sprite.svg#git-icon"></use>
+                                    </svg>
+                                    <span class="file-button__text">.certificates</span>
+                                </button>
+                            </li>
+                            <li class="editor__tabs-bar-item">
+                                <button class="file-button file-button--editor" id="tab-button-projects"
+                                    data-tab="projects">
+                                    <svg class="file-button__icon" width="19" height="18" aria-hidden="true">
+                                        <use href="src/assets/sprite.svg#python-icon"></use>
+                                    </svg>
+                                    <span class="file-button__text">projects.py</span>
+                                </button>
+                            </li>
+                            <li class="editor__tabs-bar-item">
+                                <button class="file-button file-button--editor" id="tab-button-contacts"
+                                    data-tab="contacts">
+                                    <svg class="file-button__icon" width="19" height="18" aria-hidden="true">
+                                        <use href="src/assets/sprite.svg#html-icon"></use>
+                                    </svg>
+                                    <span class="file-button__text">contacts.html</span>
+                                </button>
+                            </li>
+                        </ul>
+                        <div class="editor__container">
+                            <!-- home -->
+                            <section class="editor__content editor__content--is-active editor__content--home home"
+                                id="home">
+                                <h3 class="home__title">Главная</h3>
+                                <p class="home__greetings">👋 Привет, добро пожаловать в мое портфолио!</p>
+                                <p class="home__my-name">Меня зовут Александр</p>
+                                <div class="home__profile-group">
+                                    <figure class="home__profile-figure">
+                                        <picture>
+                                            <source type="image/webp" srcset="
+                                                            src/assets/images/home/webp/1x/my-photo.webp 1x,
+                                                            src/assets/images/home/webp/2x/my-photo@2x.webp 2x
+                                                            ">
+                                            <img class="home__profile-photo"
+                                                src="src/assets/images/home/jpg/1x/my-photo.jpg"
+                                                srcset="src/assets/images/home/jpg/2x/my-photo@2x.jpg 2x" width="250"
+                                                height="270" alt="Александр — Фуллстек разработчик">
+                                        </picture>
+                                        <figcaption class="home__profile-caption">Фуллстек разработчик</figcaption>
+                                    </figure>
+                                    <div class="home__profile-links">
+                                        <a class="home__profile-link" href="https://github.com/Stairuss" target="_blank"
+                                            rel="noopener noreferrer">GitHub</a>
+                                        <a class="home__profile-link" href="https://gitflic.ru/user/stairus"
+                                            target="_blank" rel="noopener noreferrer">GitFlic</a>
+                                    </div>
+                                </div>
+                                <div class="home__buttons">
+                                    <button class="home__button" data-tab="projects">Мои работы</button>
+                                    <button class="home__button" data-tab="about-me">Обо мне</button>
+                                    <button class="home__button" data-tab="contacts">Связь со мной</button>
+                                </div>
+                            </section>
+                            <!-- about-me -->
+                            <section class="editor__content about-me" id="about-me">
+                                <h3 class="title-content">Обо мне</h3>
+                                <div class="about-me__text">
+                                    <p class="about-me__description">
+                                        Привет, меня зовут <span class="about-me__text-accent-name">Александр</span>. Я
+                                        веб‑разработчик, который сначала научился хорошо
+                                        верстать, а потом постепенно вырос до создания полноценных сайтов и сервисов под
+                                        ключ. Мой текущий стек — это
+                                        <span class="about-me__text-accent-skill">HTML</span>,
+                                        <span class="about-me__text-accent-skill">SCSS</span>,
+                                        и
+                                        <span class="about-me__text-accent-skill">TypeScript</span>
+                                        во фронтенде, который я собираю через
+                                        <span class="about-me__text-accent-skill">Vite</span>,
+                                        а также
+                                        <span class="about-me__text-accent-skill">Python</span>
+                                        с
+                                        <span class="about-me__text-accent-skill">FastAPI</span>
+                                        и
+                                        <span class="about-me__text-accent-skill">Django/DRF</span>
+                                        на бэкенде, работа с
+                                        <span class="about-me__text-accent-skill">PostgreSQL</span>
+                                        и
+                                        <span class="about-me__text-accent-skill">SQLAlchemy</span>
+                                        .
+                                    </p>
+                                    <p class="about-me__description">
+                                        Также я умею использовать
+                                        <span class="about-me__text-accent-skill">Docker</span>
+                                        (docker-compose), хранить код через
+                                        <span class="about-me__text-accent-skill">Git</span>
+                                        и настраивать
+                                        <span class="about-me__text-accent-skill">nginx</span>
+                                        для деплоя, поэтому могу собрать и запустить приложение своими руками. Я не
+                                        эксперт
+                                        во всех технологиях, но владею ими на
+                                        достаточном уровне, чтобы писать рабочие проекты, а не только учебные примеры.
+                                        Постоянно учусь, улучшая своё понимание архитектуры, кода и DevOps.
+                                    </p>
+                                </div>
+                                <div class="about-me__skills-group">
+                                    <h4 class="title-content title-content--small">Фронтенд</h4>
+                                    <!-- Frontend -->
+                                    <ul class="about-me__skills">
+                                        <li class="about-me__skills-item">
+                                            <div class="about-me__skill">
+                                                <svg class="about-me__skill-icon" width="50" height="50"
+                                                    aria-hidden="true">
+                                                    <use href="src/assets/sprite.svg#html-icon"></use>
+                                                </svg>
+                                                <span class="about-me__skill-name">Html</span>
+                                            </div>
+                                        </li>
+                                        <li class="about-me__skills-item">
+                                            <div class="about-me__skill">
+                                                <svg class="about-me__skill-icon" width="50" height="50"
+                                                    aria-hidden="true">
+                                                    <use href="src/assets/sprite.svg#scss-icon"></use>
+                                                </svg>
+                                                <span class="about-me__skill-name">Scss</span>
+                                            </div>
+                                        </li>
+                                        <li class="about-me__skills-item">
+                                            <div class="about-me__skill">
+                                                <svg class="about-me__skill-icon" width="50" height="50"
+                                                    aria-hidden="true">
+                                                    <use href="src/assets/sprite.svg#type-script-2-icon"></use>
+                                                </svg>
+                                                <span class="about-me__skill-name">TypeScript</span>
+                                            </div>
+                                        </li>
+                                        <li class="about-me__skills-item">
+                                            <div class="about-me__skill">
+                                                <svg class="about-me__skill-icon" width="50" height="50"
+                                                    aria-hidden="true">
+                                                    <use href="src/assets/sprite.svg#vite-icon"></use>
+                                                </svg>
+                                                <span class="about-me__skill-name">Vite</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="about-me__skills-group">
+                                    <h4 class="title-content title-content--small">Бэкенд</h4>
+                                    <!-- Baсkend -->
+                                    <ul class="about-me__skills">
+                                        <li class="about-me__skills-item">
+                                            <div class="about-me__skill">
+                                                <svg class="about-me__skill-icon" width="50" height="50"
+                                                    aria-hidden="true">
+                                                    <use href="src/assets/sprite.svg#python-icon"></use>
+                                                </svg>
+                                                <span class="about-me__skill-name">Python</span>
+                                            </div>
+                                        </li>
+                                        <li class="about-me__skills-item">
+                                            <div class="about-me__skill">
+                                                <svg class="about-me__skill-icon" width="50" height="50"
+                                                    aria-hidden="true">
+                                                    <use href="src/assets/sprite.svg#fast-api-icon"></use>
+                                                </svg>
+                                                <span class="about-me__skill-name">FastAPI</span>
+                                            </div>
+                                        </li>
+                                        <li class="about-me__skills-item">
+                                            <div class="about-me__skill">
+                                                <svg class="about-me__skill-icon" width="50" height="50"
+                                                    aria-hidden="true">
+                                                    <use href="src/assets/sprite.svg#django-icon"></use>
+                                                </svg>
+                                                <span class="about-me__skill-name">Django</span>
+                                            </div>
+                                        </li>
+
+                                        <li class="about-me__skills-item">
+                                            <div class="about-me__skill">
+                                                <svg class="about-me__skill-icon" width="50" height="50"
+                                                    aria-hidden="true">
+                                                    <use href="src/assets/sprite.svg#postgre-sql-icon"></use>
+                                                </svg>
+                                                <span class="about-me__skill-name">PostgreSQL</span>
+                                            </div>
+                                        </li>
+                                        <li class="about-me__skills-item">
+                                            <div class="about-me__skill">
+                                                <svg class="about-me__skill-icon" width="50" height="50"
+                                                    aria-hidden="true">
+                                                    <use href="src/assets/sprite.svg#sqlalchemy-icon"></use>
+                                                </svg>
+                                                <span class="about-me__skill-name">SQLAlchemy</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="about-me__skills-group">
+                                    <h4 class="title-content title-content--small">Прочее</h4>
+                                    <!-- Other -->
+                                    <ul class="about-me__skills">
+                                        <li class="about-me__skills-item">
+                                            <div class="about-me__skill">
+                                                <svg class="about-me__skill-icon" width="50" height="50"
+                                                    aria-hidden="true">
+                                                    <use href="src/assets/sprite.svg#docker-icon"></use>
+                                                </svg>
+                                                <span class="about-me__skill-name">Docker</span>
+                                            </div>
+                                        </li>
+                                        <li class="about-me__skills-item">
+                                            <div class="about-me__skill">
+                                                <svg class="about-me__skill-icon" width="50" height="50"
+                                                    aria-hidden="true">
+                                                    <use href="src/assets/sprite.svg#git-icon"></use>
+                                                </svg>
+                                                <span class="about-me__skill-name">Git</span>
+                                            </div>
+                                        </li>
+                                        <li class="about-me__skills-item">
+                                            <div class="about-me__skill">
+                                                <svg class="about-me__skill-icon" width="50" height="50"
+                                                    aria-hidden="true">
+                                                    <use href="src/assets/sprite.svg#nginx-icon"></use>
+                                                </svg>
+                                                <span class="about-me__skill-name">Nginx</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <p class="about-me__description">
+                                    Если вы ищете разработчика, который сможет превратить ваши идеи в работающий
+                                    сайт или сервис, — смело пишите. Давайте поработаем вместе и сделаем что‑нибудь
+                                    стоящее.
+                                </p>
+                            </section>
+                            <!-- certificates -->
+                            <section class="editor__content certificates" id="certificates">
+                                <h3 class="title-content">Сертификаты</h3>
+                                <div class="certificates__stack-group">
+                                    <h4 class="title-content title-content--small">Фронтенд</h4>
+                                    <ul class="certificates__certs">
+                                        <li class="certificates__certs-item">
+                                            <button class="certificates__cert-button" data-direction="layout">
+                                                <picture>
+                                                    <source type="image/webp" srcset="
+                                                            src/assets/images/certificates/webp/1x/Сертификат-веб-верстка.webp 1x,
+                                                            src/assets/images/certificates/webp/2x/Сертификат-веб-верстка@2x.webp 2x
+                                                            ">
+                                                    <img class="certificates__cert-img"
+                                                        src="src/assets/images/certificates/jpg/1x/Сертификат-веб-верстка.jpg"
+                                                        srcset="src/assets/images/certificates/jpg/2x/Сертификат-веб-верстка@2x.jpg 2x"
+                                                        loading="lazy" width="200" height="300"
+                                                        alt="Сертификат по веб-верстке">
+                                                </picture>
+                                                <span class="certificates__cert-caption">Веб-верстка</span>
+                                            </button>
+                                        </li>
+                                        <li class="certificates__certs-item">
+                                            <button class="certificates__cert-button" data-direction="javascript">
+                                                <picture>
+                                                    <source type="image/webp" srcset="
+                                                            src/assets/images/certificates/webp/1x/Сертификат-JavaScript.webp 1x,
+                                                            src/assets/images/certificates/webp/2x/Сертификат-JavaScript@2x.webp 2x
+                                                            ">
+                                                    <img class="certificates__cert-img"
+                                                        src="src/assets/images/certificates/jpg/1x/Сертификат-JavaScript.jpg"
+                                                        srcset="src/assets/images/certificates/jpg/2x/Сертификат-JavaScript@2x.jpg 2x"
+                                                        width="200" height="300" loading="lazy"
+                                                        alt="Сертификат по JavaScript">
+                                                </picture>
+                                                <span class="certificates__cert-caption">JavaScript</span>
+                                            </button>
+                                        </li>
+                                        <li class="certificates__certs-item">
+                                            <button class="certificates__cert-button" data-direction="typescript">
+                                                <picture>
+                                                    <source type="image/webp" srcset="
+                                                            src/assets/images/certificates/webp/1x/Сертификат-TypeScript.webp 1x,
+                                                            src/assets/images/certificates/webp/2x/Сертификат-TypeScript@2x.webp 2x
+                                                            ">
+                                                    <img class="certificates__cert-img"
+                                                        src="src/assets/images/certificates/jpg/1x/Сертификат-TypeScript.jpg"
+                                                        srcset="src/assets/images/certificates/jpg/2x/Сертификат-TypeScript@2x.jpg 2x"
+                                                        width="200" height="300" loading="lazy"
+                                                        alt="Сертификат по TypeScript">
+                                                </picture>
+                                                <span class="certificates__cert-caption">TypeScript</span>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="certificates__stack-group">
+                                    <h4 class="title-content title-content--small">Бекенд</h4>
+                                    <ul class="certificates__certs">
+                                        <li class="certificates__certs-item">
+                                            <button class="certificates__cert-button" data-direction="python-1">
+                                                <picture>
+                                                    <source type="image/webp" srcset="
+                                                            src/assets/images/certificates/webp/1x/Сертификат-основы-Python-часть-1.webp 1x,
+                                                            src/assets/images/certificates/webp/2x/Сертификат-основы-Python-часть-1@2x.webp 2x
+                                                            ">
+                                                    <img class="certificates__cert-img"
+                                                        src="src/assets/images/certificates/jpg/1x/Сертификат-основы-Python-часть-1.jpg"
+                                                        srcset="src/assets/images/certificates/jpg/2x/Сертификат-основы-Python-часть-1@2x.jpg 2x"
+                                                        width="200" height="300" loading="lazy"
+                                                        alt="Основы Python часть 1">
+                                                </picture>
+                                                <span class="certificates__cert-caption">Основы Python 1/2</span>
+                                            </button>
+                                        </li>
+                                        <li class="certificates__certs-item">
+                                            <button class="certificates__cert-button" data-direction="python-2">
+                                                <picture>
+                                                    <source type="image/webp" srcset="
+                                                            src/assets/images/certificates/webp/1x/Сертификат-основы-Python-часть-2.webp 1x,
+                                                            src/assets/images/certificates/webp/2x/Сертификат-основы-Python-часть-2@2x.webp 2x
+                                                            ">
+                                                    <img class="certificates__cert-img"
+                                                        src="src/assets/images/certificates/jpg/1x/Сертификат-основы-Python-часть-2.jpg"
+                                                        srcset="src/assets/images/certificates/jpg/2x/Сертификат-основы-Python-часть-2@2x.jpg 2x"
+                                                        width="200" height="300" loading="lazy"
+                                                        alt="Основы Python часть 2">
+                                                </picture>
+                                                <span class="certificates__cert-caption">Основы Python 2/2</span>
+                                            </button>
+                                        </li>
+                                        <li class="certificates__certs-item">
+                                            <button class="certificates__cert-button" data-direction="python-advanced">
+                                                <picture>
+                                                    <source type="image/webp" srcset="
+                                                            src/assets/images/certificates/webp/1x/Сертификат-Python-Advanced.webp 1x,
+                                                            src/assets/images/certificates/webp/2x/Сертификат-Python-Advanced@2x.webp 2x
+                                                            ">
+                                                    <img class="certificates__cert-img"
+                                                        src="src/assets/images/certificates/jpg/1x/Сертификат-Python-Advanced.jpg"
+                                                        srcset="src/assets/images/certificates/jpg/2x/Сертификат-Python-Advanced@2x.jpg 2x"
+                                                        width="200" height="300" loading="lazy"
+                                                        alt="Сертификат по Python Advanced">
+                                                </picture>
+                                                <span class="certificates__cert-caption">Python Advanced</span>
+                                            </button>
+                                        </li>
+                                        <li class="certificates__certs-item">
+                                            <button class="certificates__cert-button" data-direction="django">
+                                                <picture>
+                                                    <source type="image/webp" srcset="
+                                                            src/assets/images/certificates/webp/1x/Сертификат-Django.webp 1x,
+                                                            src/assets/images/certificates/webp/2x/Сертификат-Django@2x.webp 2x
+                                                            ">
+                                                    <img class="certificates__cert-img"
+                                                        src="src/assets/images/certificates/jpg/1x/Сертификат-Django.jpg"
+                                                        srcset="src/assets/images/certificates/jpg/2x/Сертификат-Django@2x.jpg 2x"
+                                                        width="200" height="300" loading="lazy"
+                                                        alt="Сертификат по Django">
+                                                </picture>
+                                                <span class="certificates__cert-caption">Django</span>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </section>
+                            <!-- projects -->
+                            <section class="editor__content projects" id="projects">
+                                <h3 class="title-content">Проекты</h3>
+                                <ul class="projects__cards">
+                                    <li class="projects__cards-item">
+                                        <div class="projects__card">
+                                            <picture>
+                                                <source type="image/webp" srcset="
+                                                            src/assets/images/projects/webp/1x/portfolio.webp 1x,
+                                                            src/assets/images/projects/webp/2x/portfolio@2x.webp 2x
+                                                            ">
+                                                <img class="projects__img"
+                                                    src="src/assets/images/projects/jpg/1x/portfolio.jpg"
+                                                    srcset="src/assets/images/projects/jpg/2x/portfolio@2x.jpg 2x"
+                                                    loading="lazy" alt="Сайт портфолио">
+                                            </picture>
+                                            <h4 class="title-content title-content--small">Сайт портфолио</h4>
+                                            <p class="projects__description">
+                                                Персональный сайт-портфолио, демонстрирующий мои навыки и проекты.
+                                            </p>
+                                            <p class="projects__tech-stack">
+                                                Стек-технологий:
+                                                <span class="projects__tech">HTML</span>,
+                                                <span class="projects__tech">SCSS</span>,
+                                                <span class="projects__tech">TypeScript</span>,
+                                                <span class="projects__tech">Vite</span>,
+                                                <span class="projects__tech">Python</span>,
+                                                <span class="projects__tech">FastAPI</span>,
+                                                <span class="projects__tech">PostgreSQL</span>,
+                                                <span class="projects__tech">Nginx</span>,
+                                                <span class="projects__tech">Docker</span>
+                                            </p>
+                                            <div class="projects__links">
+                                                <a class="projects__link" href="https://github.com/Stairuss/my_site"
+                                                    target="_blank" rel="noopener noreferrer">GitHub</a>
+                                                <a class="projects__link" href="https://gitflic.ru/project/stairus/my_site"
+                                                    target="_blank" rel="noopener noreferrer">GitFlic</a>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="projects__cards-item">
+                                        <div class="projects__card">
+                                            <picture>
+                                                <source type="image/webp" srcset="
+                                                            src/assets/images/projects/webp/1x/online-store.webp 1x,
+                                                            src/assets/images/projects/webp/2x/online-store@2x.webp 2x
+                                                            ">
+                                                <img class="projects__img"
+                                                    src="src/assets/images/projects/jpg/1x/online-store.jpg"
+                                                    srcset="src/assets/images/projects/jpg/2x/online-store@2x.jpg 2x"
+                                                    loading="lazy" alt="Сайт портфолио">
+                                            </picture>
+                                            <h4 class="title-content title-content--small">Интернет магазин</h4>
+                                            <p class="projects__description">
+                                                <b>Бэкенд</b> интернет-магазина на Django + DRF. Реализованы каталог,
+                                                корзина,
+                                                заказы, оплата, личный кабинет, админка.
+                                            </p>
+                                            <p class="projects__tech-stack">
+                                                Стек-технологий:
+                                                <span class="projects__tech">Django</span>,
+                                                <span class="projects__tech">SQLite</span>,
+                                                <span class="projects__tech">Django REST Framework</span>
+                                            </p>
+                                            <div class="projects__links">
+                                                <a class="projects__link"
+                                                    href="https://github.com/Stairuss/online-store" target="_blank"
+                                                    rel="noopener noreferrer">GitHub</a>
+                                                <a class="projects__link"
+                                                    href="https://gitflic.ru/project/stairus/online-store"
+                                                    target="_blank" rel="noopener noreferrer">GitFlic</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="projects__cards-item">
+                                        <div class="projects__card">
+                                            <picture>
+                                                <source type="image/webp" srcset="
+                                                            src/assets/images/projects/webp/1x/star-wars-bot.webp 1x,
+                                                            src/assets/images/projects/webp/2x/star-wars-bot@2x.webp 2x
+                                                            ">
+                                                <img class="projects__img"
+                                                    src="src/assets/images/projects/jpg/1x/star-wars-bot.jpg"
+                                                    srcset="src/assets/images/projects/jpg/2x/star-wars-bot@2x.jpg 2x"
+                                                    loading="lazy" alt="Сайт портфолио">
+                                            </picture>
+                                            <h4 class="title-content title-content--small">Star Wars Telegram Bot</h4>
+                                            <p class="projects__description">
+                                                Telegram-бот для изучения вселенной Star Wars с использованием
+                                                публичного API SWAPI. Регистрация
+                                                пользователей, сохранение истории запросов, поиск по категориям
+                                                (персонажи, фильмы, планеты, виды, звездолёты, транспорт).
+                                            </p>
+                                            <p class="projects__tech-stack">
+                                                Стек-технологий:
+                                                <span class="projects__tech">Python</span>,
+                                                <span class="projects__tech">pyTelegramBotAPI</span>,
+                                                <span class="projects__tech">aiohttp</span>,
+                                                <span class="projects__tech">SQLite</span>,
+                                                <span class="projects__tech">чистый SQL</span>
+                                            </p>
+                                            <div class="projects__links">
+                                                <a class="projects__link"
+                                                    href="https://github.com/Stairuss/star-wars-bot" target="_blank"
+                                                    rel="noopener noreferrer">GitHub</a>
+                                                <a class="projects__link"
+                                                    href="https://gitflic.ru/project/stairus/star-wars-bot"
+                                                    target="_blank" rel="noopener noreferrer">GitFlic</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </section>
+                            <!-- contacts -->
+                            <section class="editor__content contacts" id="contacts">
+                                <h3 class="title-content">Связаться со мной</h3>
+                                <div class="contacts__methods">
+                                    <form class="contacts__form" method="POST" novalidate>
+                                        <h4 class="title-content title-content--small">Напишите мне</h4>
+                                        <div class="contacts__input-container">
+                                            <p class="contacts__error" id="contacts-name-error"></p>
+                                            <label class="contacts__label" for="contacts-name">Имя</label>
+                                            <input class="contacts__input" id="contacts-name" type="text" name="name"
+                                                placeholder="Имя" autocomplete="off">
+                                        </div>
+                                        <div class="contacts__input-container">
+                                            <p class="contacts__error" id="contacts-email-error"></p>
+                                            <label class="contacts__label" for="contacts-email">Почта</label>
+                                            <input class="contacts__input" id="contacts-email" type="email" name="email"
+                                                placeholder="Почта" autocomplete="off">
+                                        </div>
+                                        <div class="contacts__input-container">
+                                            <p class="contacts__error" id="contacts-message-error"></p>
+                                            <label class="contacts__label" for="contacts-message">Сообщение</label>
+                                            <textarea class="contacts__input contacts__input--textarea"
+                                                id="contacts-message" name="message"
+                                                placeholder="Ваше сообщение" autocomplete="off"></textarea>
+                                        </div>
+                                        <button class="contacts__submit" type="submit">Отправить</button>
+                                        <div class="contacts__feedback" aria-hidden="true">
+                                            <span class="contacts__feedback-message"></span>
+                                            <span class="contacts__feedback-icon"></span>
+                                            <span class="loader"></span>
+                                        </div>
+                                    </form>
+                                    <address class="contacts__social">
+                                        <p class="title-content title-content--small">Контакты</p>
+                                        <ul class="social social--with-signature">
+                                            <li class="social__item">
+                                                <a class="social__link" href="https://vk.com/id164444388"
+                                                    target="_blank" rel="noopener noreferrer">
+                                                    <svg class="social__icon" width="24" height="24" aria-hidden="true">
+                                                        <use href="src/assets/sprite.svg#vk-icon"></use>
+                                                    </svg>
+                                                    <span class="social__text">ВКонтакте</span>
+                                                </a>
+                                            </li>
+                                            <li class="social__item">
+                                                <a class="social__link"
+                                                    href="https://max.ru/u/f9LHodD0cOJox7khH7LCca0ZtB1Ghk5-YTCOnQKVAeoABXAAjK1X3OnrByc"
+                                                    target="_blank" rel="noopener noreferrer">
+                                                    <svg class="social__icon" width="24" height="24" aria-hidden="true">
+                                                        <use href="src/assets/sprite.svg#max-icon"></use>
+                                                    </svg>
+                                                    <span class="social__text">МАХ</span>
+                                                </a>
+                                            </li>
+                                            <li class="social__item">
+                                                <a class="social__link" href="mailto:pvy.vapsis@mail.ru" target="_blank"
+                                                    rel="noopener noreferrer">
+                                                    <svg class="social__icon" width="24" height="24" aria-hidden="true">
+                                                        <use href="src/assets/sprite.svg#mail-icon"></use>
+                                                    </svg>
+                                                    <span class="social__text">Почта</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </address>
+                                </div>
+                            </section>
+                            <!-- themes -->
+                            <section class="editor__content themes" id="themes">
+                                <h3 class="title-content">Управление темами</h3>
+                                <ul class="themes__list">
+                                    <li class="themes__item">
+                                        <div class="themes__card">
+                                            <img class="themes__img" src="src/assets/images/themes/dracula.png"
+                                                width="100" height="100" loading="lazy" alt="Тема 'Dracula'">
+                                            <h4 class="title-content title-content--very-small">Dracula</h4>
+                                            <button class="themes__button"
+                                                data-theme-button="dracula">Применить</button>
+                                        </div>
+                                    </li>
+                                    <li class="themes__item">
+                                        <div class="themes__card">
+                                            <img class="themes__img" loading="lazy"
+                                                src="src/assets/images/themes/nord.png" width="100" height="100"
+                                                alt="Тема 'Nord'">
+                                            <h4 class="title-content title-content--very-small">Nord</h4>
+                                            <button class="themes__button" data-theme-button="nord">Применить</button>
+                                        </div>
+                                    </li>
+                                    <li class="themes__item">
+                                        <div class="themes__card">
+                                            <img class="themes__img" loading="lazy"
+                                                src="src/assets/images/themes/rosely-light.png" width="100" height="100"
+                                                alt="Тема 'Rosely Light'">
+                                            <h4 class="title-content title-content--very-small">Rosely Light</h4>
+                                            <button class="themes__button"
+                                                data-theme-button="rosely-light">Применить</button>
+                                        </div>
+                                    </li>
+                                    <li class="themes__item">
+                                        <div class="themes__card">
+                                            <img class="themes__img" loading="lazy"
+                                                src="src/assets/images/themes/night-owl.png" width="100" height="100"
+                                                alt="Тема 'Night-Owl'">
+                                            <h4 class="title-content title-content--very-small">Night Owl</h4>
+                                            <button class="themes__button"
+                                                data-theme-button="night-owl">Применить</button>
+                                        </div>
+                                    </li>
+                                    <li class="themes__item">
+                                        <div class="themes__card">
+                                            <img class="themes__img" loading="lazy"
+                                                src="src/assets/images/themes/night-owl.png" width="100" height="100"
+                                                alt="Тема 'Light Owl'">
+                                            <h4 class="title-content title-content--very-small">Light Owl</h4>
+                                            <button class="themes__button"
+                                                data-theme-button="light-owl">Применить</button>
+                                        </div>
+                                    </li>
+                                    <li class="themes__item">
+                                        <div class="themes__card">
+                                            <img class="themes__img" src="src/assets/images/themes/rapture.jpg"
+                                                width="100" height="100" loading="lazy" alt="Тема 'Rapture'">
+                                            <h4 class="title-content title-content--very-small">Rapture</h4>
+                                            <button class="themes__button"
+                                                data-theme-button="rapture">Применить</button>
+                                        </div>
+                                    </li>
+                                    <li class="themes__item">
+                                        <div class="themes__card">
+                                            <img class="themes__img" loading="lazy"
+                                                src="src/assets/images/themes/shades-of-purple.png" width="100"
+                                                height="100" alt="Тема 'Shades of Purple'">
+                                            <h4 class="title-content title-content--very-small">Shades of Purple</h4>
+                                            <button class="themes__button"
+                                                data-theme-button="shades-of-purple">Применить</button>
+                                        </div>
+                                    </li>
+                                    <li class="themes__item">
+                                        <div class="themes__card">
+                                            <img class="themes__img" src="src/assets/images/themes/github-dark.png"
+                                                width="100" height="100" loading="lazy" alt="Тема 'Github-Dark'">
+                                            <h4 class="title-content title-content--very-small">GitHub Dark</h4>
+                                            <button class="themes__button"
+                                                data-theme-button="github-dark">Применить</button>
+                                        </div>
+                                    </li>
+                                    <li class="themes__item">
+                                        <div class="themes__card">
+                                            <img class="themes__img" src="src/assets/images/themes/calamity.png"
+                                                width="100" height="100" loading="lazy" alt="Тема 'Calamity'">
+                                            <h4 class="title-content title-content--very-small">Calamity</h4>
+                                            <button class="themes__button"
+                                                data-theme-button="calamity">Применить</button>
+                                        </div>
+                                    </li>
+                                    <li class="themes__item">
+                                        <div class="themes__card">
+                                            <img class="themes__img" src="src/assets/images/themes/ayu.png" width="100"
+                                                height="100" loading="lazy" alt="Тема 'Ayu-Dark'">
+                                            <h4 class="title-content title-content--very-small">Ayu Dark</h4>
+                                            <button class="themes__button"
+                                                data-theme-button="ayu-dark">Применить</button>
+                                        </div>
+                                    </li>
+                                    <li class="themes__item">
+                                        <div class="themes__card">
+                                            <img class="themes__img" src="src/assets/images/themes/ayu.png" width="100"
+                                                height="100" loading="lazy" alt="Тема 'Ayu-Mirage'">
+                                            <h4 class="title-content title-content--very-small">Ayu Mirage</h4>
+                                            <button class="themes__button"
+                                                data-theme-button="ayu-mirage">Применить</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </section>
+                            <!-- terminal -->
+                            <section class="terminal" id="terminal">
+                                <h3 class="terminal__title">Терминал</h3>
+                                <div class="terminal__resize-handle" aria-hidden="true"></div>
+                                <nav class="terminal__tabs">
+                                    <ul class="terminal__tabs-list">
+                                        <li class="terminal__tabs-item">
+                                            <button class="terminal__tabs-button"
+                                                data-terminal-tab="terminal-problems">Проблемы</button>
+                                        </li>
+                                        <li class="terminal__tabs-item">
+                                            <button class="terminal__tabs-button"
+                                                data-terminal-tab="terminal-output-data">Выходные данные</button>
+                                        </li>
+                                        <li class="terminal__tabs-item">
+                                            <button class="terminal__tabs-button"
+                                                data-terminal-tab="terminal-debug-consol">Консоль отладки</button>
+                                        </li>
+                                        <li class="terminal__tabs-item terminal__tabs-item--terminal">
+                                            <button class="terminal__tabs-button terminal__tabs-button--is-active"
+                                                data-terminal-tab="terminal-terminal">Терминал</button>
+                                        </li>
+                                        <li class="terminal__tabs-item">
+                                            <button class="terminal__tabs-button"
+                                                data-terminal-tab="terminal-ports">Порты</button>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <section class="terminal__workspace">
+                                    <h4 class="terminal__title">Рабочая область терминала</h4>
+                                    <div class="terminal__content terminal__content--problems" id="terminal-problems"
+                                        aria-hidden="true">
+                                        <p class="terminal__content-stub">Проблем в рабочей области не обнаружено</p>
+                                    </div>
+                                    <div class="terminal__content terminal__content--output-data"
+                                        id="terminal-output-data" aria-hidden="true">
+                                        <p class="terminal__content-stub">Данные отсутствуют</p>
+                                    </div>
+                                    <div class="terminal__content terminal__content--debug-console"
+                                        id="terminal-debug-consol" aria-hidden="true">
+                                        <p class="terminal__content-stub">
+                                            <svg width="17" height="17" aria-hidden="true">
+                                                <use href="src/assets/sprite.svg#arrow-right-icon"></use>
+                                            </svg>
+                                            <span>Запустите сеанс отладки для вычисления выражений</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="terminal__content terminal__content--is-active terminal__content--terminal"
+                                        id="terminal-terminal">
+                                        <div class="terminal__content-history-container"></div>
+                                        <div class="terminal__content-input-container">
+                                            <span class="terminal__content-prompt" id="terminal-prompt">
+                                                <span class="terminal__content-mode" id="terminal-mode"></span><span
+                                                    class="terminal__content-user" id="terminal-user"></span>
+                                            </span>
+                                            <input class="terminal__content-input" type="text" name="terminal-input"
+                                                id="terminal-input" autocomplete="off">
+                                            <label class="terminal__content-label" for="terminal-input">
+                                                Входные данные
+                                            </label>
+                                        </div>
+                                        <span class="loader loader--terminal"></span>
+                                    </div>
+                                    <div class="terminal__content terminal__content--ports" id="terminal-ports"
+                                        aria-hidden="true">
+                                        <p class="terminal__content-stub">
+                                            Нет перенаправленных портов. Перенаправление
+                                            порта для доступа к локально работающим службам через Интернет.
+                                        </p>
+                                        <span>Перенаправить порт</span>
+                                    </div>
+                                </section>
+                                <aside class="terminal__dropdown">
+                                    <ul class="terminal__dropdown-panel">
+                                        <li class="terminal__dropdown-panel-item" aria-hidden="true">
+                                            <span class="terminal__dropdown-panel-stub">
+                                                <svg class="terminal__dropdown-panel-icon" width="18" height="18">
+                                                    <use href="src/assets/sprite.svg#add-icon"></use>
+                                                </svg>
+                                            </span>
+                                        </li>
+                                        <li class="terminal__dropdown-panel-item" aria-hidden="true">
+                                            <span class="terminal__dropdown-panel-stub">
+                                                <svg class="terminal__dropdown-panel-icon" width="18" height="18">
+                                                    <use href="src/assets/sprite.svg#ellipsis-icon"></use>
+                                                </svg>
+                                            </span>
+                                        </li>
+                                        <li class="terminal__dropdown-panel-item" aria-hidden="true">
+                                            <span class="terminal__dropdown-panel-stub">
+                                                <svg class="terminal__dropdown-panel-icon terminal__dropdown-panel-icon--rotate"
+                                                    width="18" height="18">
+                                                    <use href="src/assets/sprite.svg#remove-icon"></use>
+                                                </svg>
+                                            </span>
+                                        </li>
+                                        <li class="terminal__dropdown-panel-item">
+                                            <button class="terminal__button terminal__button--toggle-size"
+                                                aria-label="Максимально развернуть терминал">
+                                                <svg class="terminal__terminal__button-icon" width="18" height="18"
+                                                    aria-hidden="true">
+                                                    <use href="src/assets/sprite.svg#screen-full-icon"></use>
+                                                </svg>
+                                            </button>
+                                        </li>
+                                        <li class="terminal__dropdown-panel-item">
+                                            <button class="terminal__button terminal__button--close"
+                                                aria-label="Закрыть терминал">
+                                                <svg class="terminal__button-icon" width="18" height="18"
+                                                    aria-hidden="true">
+                                                    <use href="src/assets/sprite.svg#cross-icon"></use>
+                                                </svg>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                    <ul class="terminal__dropdown-terminal-list">
+                                        <li class="terminal__dropdown-terminal-item">
+                                            <div
+                                                class="terminal__dropdown-terminal-element terminal__dropdown-terminal-element--is-active">
+                                                <svg class="terminal__dropdown-terminal-icon" width="16" height="16"
+                                                    aria-hidden="true">
+                                                    <use href="src/assets/sprite.svg#terminal-icon"></use>
+                                                </svg>
+                                                <span class="terminal__dropdown-terminal-name">bash</span>
+                                            </div>
+                                        </li>
+                                        <li class="terminal__dropdown-terminal-item">
+                                            <div class="terminal__dropdown-terminal-element">
+                                                <svg class="terminal__dropdown-terminal-icon" width="16" height="16"
+                                                    aria-hidden="true">
+                                                    <use href="src/assets/sprite.svg#terminal-icon"></use>
+                                                </svg>
+                                                <span class="terminal__dropdown-terminal-name">npm</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </aside>
+                                <div class="terminal__buttons-container">
+                                    <button class="terminal__button terminal__button--toggle-size"
+                                        aria-label="Максимально развернуть терминал">
+                                        <svg class="terminal__terminal__button-icon" width="18" height="18"
+                                            aria-hidden="true">
+                                            <use href="src/assets/sprite.svg#screen-full-icon"></use>
+                                        </svg>
+                                    </button>
+                                    <button class="terminal__button terminal__button--close"
+                                        aria-label="Закрыть терминал">
+                                        <svg class="terminal__button-icon" width="18" height="18" aria-hidden="true">
+                                            <use href="src/assets/sprite.svg#cross-icon"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="vertical-line vertical-line--editor" aria-hidden="true"></div>
+                        <div class="vertical-line vertical-line--editor-tabs-bar" aria-hidden="true"></div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__elements-group">
+                    <span class="footer__element">
+                        <svg class="footer__element-icon" width="17" height="17" aria-hidden="true">
+                            <use href="src/assets/sprite.svg#remote-icon"></use>
+                        </svg>
+                    </span>
+                    <a class="footer__element" href="https://github.com/Stairuss" target="_blank"
+                        rel="noopener noreferrer" aria-label="GitHub">
+                        <svg class="footer__element-icon" width="17" height="17" aria-hidden="true">
+                            <use href="src/assets/sprite.svg#git-branch-icon"></use>
+                        </svg>
+                        <span class="footer__element-text">main</span>
+                    </a>
+                    <span class="footer__element">
+                        <svg class="footer__element-icon" width="17" height="17" aria-hidden="true">
+                            <use href="src/assets/sprite.svg#error-icon"></use>
+                        </svg>
+                        <span class="footer__element-text">0</span>
+                    </span>
+                    <span class="footer__element">
+                        <svg class="footer__element-icon" width="17" height="17" aria-hidden="true">
+                            <use href="src/assets/sprite.svg#warning-icon"></use>
+                        </svg>
+                        <span class="footer__element-text">0</span>
+                    </span>
+                </div>
+                <div class="footer__elements-group footer__elements-group--right">
+                    <span class="footer__element">
+                        <span class="footer__element-text">UTF-8</span>
+                    </span>
+                    <span class="footer__element">
+                        <span class="footer__element-text">LF</span>
+                    </span>
+                    <span class="footer__element">
+                        <svg class="footer__element-icon" width="17" height="17" aria-hidden="true">
+                            <use href="src/assets/sprite.svg#symbol-namespace-icon"></use>
+                        </svg>
+                        <span class="footer__element-text">Python</span>
+                    </span>
+                    <span class="footer__element">
+                        <svg class="footer__element-icon" width="17" height="17" aria-hidden="true">
+                            <use href="src/assets/sprite.svg#copilot-icon"></use>
+                        </svg>
+                    </span>
+                    <span class="footer__element">
+                        <span class="footer__element-text">venv (3.12.3)</span>
+                    </span>
+                    <span class="footer__element">
+                        <svg class="footer__element-icon" width="17" height="17" aria-hidden="true">
+                            <use href="src/assets/sprite.svg#broadcast-icon"></use>
+                        </svg>
+                        <span class="footer__element-text">Go Live</span>
+                    </span>
+                    <span class="footer__element">
+                        <svg class="footer__element-icon" width="17" height="17" aria-hidden="true">
+                            <use href="src/assets/sprite.svg#bell-dot"></use>
+                        </svg>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="overlay"></div>
+    <script type="module" src="/src/scripts/main.ts"></script>
+
+</body>
+
+</html>

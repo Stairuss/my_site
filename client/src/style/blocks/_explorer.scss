@@ -1,0 +1,63 @@
+@use '../global/mixins' as m;
+@use '../global/_variables' as v;
+@use '../blocks//editor' as *;
+
+
+.explorer {
+    border-right: 1px solid var(--border-color);
+    background-color: var(--explorer-bg-color, transparent);
+    color: var(--explorer-text-color, inherit);
+
+    @include m.viewport-md {
+        display: none;
+    }
+
+    &__title {        
+        height: $tabs-bar-height;
+        margin: 0;
+        padding: 10px 12px;        
+        font-weight: 300;
+        font-size: 14px;
+        text-transform: uppercase;        
+        box-shadow: 0 4px 8px -3px rgba(0, 0, 0, 0.3);      
+    }
+
+    &__toggle {
+
+        &-button {
+            @include m.reset-button;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px;
+            color: inherit;
+            font-weight: 600;
+            font-size: 14px;
+            text-transform: uppercase;                        
+        } 
+        
+        &-icon {            
+
+            &--close {
+                transform: rotate(-90deg);
+            }
+        }
+
+        &-text {
+            line-height: 1;
+        }
+    }
+
+    &__files {
+        @include m.reset-list;
+        display: flex;
+        flex-direction: column;
+        padding: 8px 0;
+
+        &--hidden {
+            @include m.visually-hidden;
+        }
+    }
+
+
+}

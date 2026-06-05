@@ -1,0 +1,57 @@
+@use '../global/variables' as v;
+
+
+// Сбрасывает стили списка 
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+// Сбрасывает стили кнопки 
+@mixin reset-button {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+}
+
+// Делает элемент визуально скрытым, но доступным для скринридеров
+// Элемент убирается из потока страницы, не занимает место в макете,
+// при этом остаётся доступным для программ чтения с экрана.
+@mixin visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+}
+
+@mixin viewport-xs {
+  @media (max-width: v.$viewport-xs) {
+    @content;
+  }
+}
+
+@mixin viewport-sm {
+  @media (max-width: v.$viewport-sm) {
+    @content;
+  }
+}
+
+@mixin viewport-md {
+  @media (max-width: v.$viewport-md) {
+    @content;
+  }
+}
+
+@mixin viewport-xl {
+  @media (max-width: v.$viewport-xl) {
+    @content;
+  }
+}
+

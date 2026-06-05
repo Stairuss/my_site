@@ -1,0 +1,70 @@
+@use '../global/mixins' as m;
+
+$tabs-bar-height: 37px;
+
+.editor {
+    position: relative;
+    display: grid;
+    grid-template-rows: $tabs-bar-height auto;
+    background-color: var(--editor-bg-color);
+    color: var(--editor-text-color, inherit);
+
+    &__title {
+        @include m.visually-hidden
+    }
+
+    &__tabs-bar {
+        @include m.reset-list;
+        height: 100%;
+        display: flex;
+        background-color: var(--editor-tabs-bar-bg-color);
+        color: var(--editor-tabs-bar-text-color);
+        margin-right: -10px;
+        box-shadow: 0 4px 8px -3px rgba(0, 0, 0, 0.3);
+
+        @include m.viewport-md {
+            overflow: auto;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+    }
+
+    &__container {
+        padding: 32px;
+        overflow-y: auto;
+
+        @include m.viewport-md {
+            padding: 20px;
+        }
+
+        @include m.viewport-sm {
+            padding: 15px 5px;
+        }
+    }
+
+    &__content {
+        display: none;
+        padding: 25px;
+        color: var(--editor-content-text-color, inherit);
+
+        @include m.viewport-md {
+            padding: 20px;
+        }
+
+        @include m.viewport-sm {
+            padding: 15px 15px;
+
+            &--home {
+                padding: 15px 5px;
+            }
+        }
+
+        &--is-active {
+            .editor & {
+                display: grid;
+            }
+        }
+    }
+}

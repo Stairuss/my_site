@@ -1,0 +1,568 @@
+:root {
+  --certificates-window-close-bg-color-rgb: 255, 255, 255;
+}
+
+
+/* Dracula */
+/* ------------------------------------ */
+[data-theme='dracula'] {
+  /* Global */
+  --main-bg-color: #282a36;
+  --main-text-color: #6272a4;
+  --interactive-element-color: #8d92ff;
+  --interactive-element-hover-color: #94527e;
+  --interactive-element-focus-color: #94527e;
+  --interactive-element-active-color: #8d92ff;
+  --button-bg-color: #94527e;
+  --button-hover-bg-color: #8d92ff;
+  --button-focus-bg-color: #8d92ff;
+  --button-active-bg-color: #94527e;
+  --border-color: #bd93f9;
+  --title-color: #94527e;
+  --button-tab-bg-hover-color: #313341;
+  --button-tab-bg-focus-color: #313341;
+  --button-tab-bg-active-color: #3c3c58;
+  --accent-text-skill-color: #e3af62;
+  --card-bg-color: #343746;
+  --error-color: #ff5555;
+
+  /* Header */
+  --header-bg-color: #21222c;
+  --header-text-color: #f8f8f2;
+
+  /* Sidebar */
+  --sidebar-bg-color: #343746;
+
+  /* Explorer */
+  --explorer-bg-color: #21222c;
+  --explorer-text-color: #f8f8f2;
+
+  /* Editor */
+  --editor-content-text-color: #f8f8f2;
+  --editor-tabs-bar-bg-color: #21222c;
+
+  /* Contacts */
+  --contacts-feedback-border-color: #bd93f9;
+
+  /* Terminal */
+  --terminal-workspace-text-color: #f8f8f2;
+  --terminal-bg-color: #21222c;
+  --terminal-border-color: #bd93f9;
+  --terminal-prompt-text-color: #64f87f;
+  --terminal-mode-text-color: #bd93f9;
+
+  /* Footer */
+  --footer-bg-color: #191a21;
+  --footer-text-color: #f8f8f2;
+
+  /* Components */
+  --file-button-is-ative: #f8f8f2;
+  --loader-color: #f8f8f2;
+}
+
+
+/* Nord */
+/* ------------------------------------ */
+[data-theme='nord'] {
+  /* Global */
+  --main-bg-color: #2e3440;
+  --main-text-color: #727883;
+  --interactive-element-color: #d8dee9;
+  --interactive-element-hover-color: #81a1c1;
+  --interactive-element-focus-color: #81a1c1;
+  --interactive-element-active-color: #87c0d0;
+  --button-bg-color: #5e81ac;
+  --button-hover-bg-color: #81a1c1;
+  --button-focus-bg-color: #81a1c1;
+  --button-active-bg-color: #5e81ac;
+  --border-color: #3b4252;
+  --title-color: #88c0d0;
+  --button-tab-bg-hover-color: #434c5e;
+  --button-tab-bg-focus-color: #434c5e;
+  --button-tab-bg-active-color: #4c566a;
+  --accent-text-skill-color: #81a1c1;
+  --card-bg-color: #3b4252;
+  --error-color: #FF6E6E;
+
+  /* Header */
+  --header-text-color: #e5e9f0;
+
+  /* Explorer */
+  --explorer-text-color: #e5e9f0;
+
+  /* Editor */
+  --editor-content-text-color: #e5e9f0;
+
+  /* Themes */
+  --themes-button-text-color: #2e3440;
+
+  /* Terminal */
+  --terminal-workspace-text-color: #e5e9f0;
+  --terminal-bg-color: #2e3440;
+  --terminal-prompt-text-color: #9fbe8c;  
+
+  /* Footer */
+  --footer-bg-color: #5E81AC;
+  --footer-text-color: #fff;
+
+  /* Components */
+  --file-button-is-ative: #e5e9f0;
+  --loader-color: #e5e9f0;
+}
+
+
+/* Rosely Light */
+/* ------------------------------------ */
+[data-theme='rosely-light'] {
+  /* Global */
+  --main-bg-color: #f4eee8;
+  --main-text-color: #615f5f;
+  --interactive-element-color: #85677b;
+  --interactive-element-hover-color: #b565a7;
+  --interactive-element-focus-color: #b565a7;
+  --interactive-element-active-color: #85677b;
+  --button-bg-color: #d2b4cc;
+  --button-hover-bg-color: #f2c6ce;
+  --button-focus-bg-color: #f2c6ce;
+  --button-active-bg-color: #d2b4cc;
+  --border-color: #be9cc1;
+  --title-color: #b565a7;
+  --button-tab-bg-hover-color: #f2c6ce;
+  --button-tab-bg-focus-color: #f2c6ce;
+  --button-tab-bg-active-color: #d2b4cc;
+  --accent-text-skill-color: #1f9886;
+  --card-bg-color: #f4dede;
+  --error-color: #d2386c;
+
+  /* Header */
+  --header-bg-color: #f7caca;
+  --header-text-color: #27272a;
+
+  /* Sidebar */
+  --sidebar-bg-color: #d2c4d6;
+
+  /* Explorer */
+  --explorer-bg-color: #f4dede;
+
+  /* Editor */
+  --editor-tabs-bar-bg-color: #e7cdd6;
+
+  /* Home */
+  --home-button-color: #fff;
+
+  /* Certificates */
+  --certificates-window-close-bg-color-rgb: 181, 101, 167;
+
+  /* Contacts */
+  --contact-form-bg-color: #f4eee8;
+  --contacts-feedback-border-color: #be9cc1;
+
+  /* Themes */
+  --themes-button-text-color: #fff;
+
+  /* Terminal */
+  --terminal-workspace-text-color: #444345;
+  --terminal-border-color: #be9cc1;
+  --terminal-prompt-text-color: #59662b;
+  --terminal-mode-text-color: #b565a7;
+
+  /* Footer */
+  --footer-bg-color: #85677b;
+  --footer-text-color: #fff;
+
+  /* Components */
+  --file-button-is-ative: #27272a;
+  --loader-color: #615f5f;
+}
+
+
+/* Night Owl */
+/* ------------------------------------ */
+[data-theme='night-owl'] {
+  /* Global */
+  --main-bg-color: #011627;
+  --main-text-color: #6a87a3;
+  --interactive-element-color: #5f7e97;
+  --interactive-element-hover-color: #273f53;
+  --interactive-element-focus-color: #273f53;
+  --interactive-element-active-color: #5f7e97;
+  --button-bg-color: #14334b;
+  --button-hover-bg-color: #273f53;
+  --button-focus-bg-color: #273f53;
+  --button-active-bg-color: #14334b;
+  --border-color: #102a44;
+  --title-color: #d6deeb;
+  --button-tab-bg-hover-color: #0e293f;
+  --button-tab-bg-focus-color: #0e293f;
+  --button-tab-bg-active-color: #13344f;
+  --accent-text-skill-color: #b8b64c;
+  --card-bg-color: #051b30;
+  --error-color: #e95678;
+
+  /* Header */
+  --header-text-color: #F8F8F2;
+
+  /* Editor */
+  --editor-content-text-color: #F8F8F2;
+  --editor-tabs-bar-bg-color: #01111d;
+
+  /* About me */
+  --about-me-text-accent-name-color: #6fbf90;
+
+  // Themes 
+  --themes-button-text-color: #011627;
+
+  /* Terminal */
+  --terminal-workspace-text-color: #F8F8F2;
+  --terminal-prompt-text-color: #1fda6e;  
+
+  /* Components */
+  --file-button-is-ative: #F8F8F2;
+  --loader-color: #F8F8F2;
+}
+
+
+/* Light Owl */
+/* ------------------------------------ */
+[data-theme='light-owl'] {
+  /* Global */
+  --main-bg-color: #fbfbfb;
+  --main-text-color: #20304e;
+  --interactive-element-color: #878793;
+  --interactive-element-hover-color: #5f7d97;
+  --interactive-element-focus-color: #5f7d97;
+  --interactive-element-active-color: #878793;
+  --button-bg-color: #d3e8f8;
+  --button-hover-bg-color: #dadada;
+  --button-focus-bg-color: #dadada;
+  --button-active-bg-color: #d3e8f8;
+  --border-color: #e9e9e9;
+  --title-color: #403f53;
+  --button-tab-bg-hover-color: #d3e8f8;
+  --button-tab-bg-focus-color: #d3e8f8;
+  --button-tab-bg-active-color: #e0e7ea;
+  --accent-text-skill-color: #ad28a5;
+  --card-bg-color: #f0f0f0;
+  --error-color: #E95678;
+
+  /* Header */
+  --header-bg-color: #f0f0f0;
+
+  /* Sidebar */
+  --sidebar-bg-color: #f0f0f0;
+
+  /* Explorer */
+  --explorer-bg-color: #f0f0f0;
+
+  /* Editor */
+  --editor-tabs-bar-bg-color: #f0f0f0;
+
+  /* Home */
+  --home-button-color: #fff;
+
+  /* About-me */
+  --about-me-text-accent-name-color: #5398ea;
+
+  /* Certificates */
+  --certificates-window-close-bg-color-rgb: 64, 63, 83;
+
+  // Themes 
+  --themes-button-text-color: #fff;
+
+  /* Terminal */
+  --terminal-workspace-text-color: #000;
+  --terminal-bg-color: #f6f6f6;
+  --terminal-prompt-text-color: #067555;
+  --terminal-mode-text-color: #2072b1;
+
+  /* Footer */
+  --footer-bg-color: #f0f0f0;
+
+  /* Components */  
+  --loader-color: #20304e;
+}
+
+
+/* Rapture  */
+/* ------------------------------------ */
+[data-theme='rapture'] {
+  /* Global */
+  --main-bg-color: #111e2a;
+  --main-text-color: #4a637f;
+  --interactive-element-color: #6284ac;
+  --interactive-element-hover-color: #92beee;
+  --interactive-element-focus-color: #92beee;
+  --interactive-element-active-color: #6284ac;
+  --button-text-color: #E9EDF4;
+  --button-bg-color: #233749;
+  --button-hover-bg-color: #6284ac;
+  --button-focus-bg-color: #6284ac;
+  --button-active-bg-color: #233749;
+  --border-color: #1f3348;
+  --title-color: #6cefc4;
+  --button-tab-bg-hover-color: #152737;
+  --button-tab-bg-focus-color: #152737;
+  --button-tab-bg-active-color: #233749;
+  --accent-text-skill-color: #fff09b;
+  --card-bg-color: #0d1721;
+  --error-color: #e95678;
+
+  /* Header */
+  --header-bg-color: #0d1721;
+
+  /* Explorer */
+  --explorer-bg-color: #0d1721;
+  --explorer-text-color: #b0bada;
+
+  /* Editor */
+  --editor-content-text-color: #E9EDF4;
+  --editor-tabs-bar-text-color: #6588ad;
+
+  // Themes 
+  --themes-button-text-color: #000;
+
+  /* Terminal */
+  --terminal-workspace-text-color: #E9EDF4;
+  --terminal-bg-color: #111e2a;
+  --terminal-prompt-text-color: #76e8ca;  
+
+  /* Footer */
+  --footer-bg-color: #162736;
+
+  /* Components */
+  --file-button-is-ative: #E9EDF4;
+  --loader-color: #E9EDF4;
+}
+
+
+/* Shades of Purple */
+/* ------------------------------------ */
+[data-theme='shades-of-purple'] {
+  /* Global */
+  --main-bg-color: #2d2b55;
+  --main-text-color: #A599E9;
+  --interactive-element-color: #a599e9;
+  --interactive-element-hover-color: #ffffff;
+  --interactive-element-focus-color: #ffffff;
+  --interactive-element-active-color: #a599e9;
+  --button-text-color: #000;
+  --button-bg-color: #a599e9;
+  --button-hover-bg-color: #FFEE80;
+  --button-focus-bg-color: #FFEE80;
+  --button-active-bg-color: #a599e9;
+  --border-color: #492d8a;
+  --title-color: #fad000;
+  --button-tab-bg-hover-color: #1E1E3F;
+  --button-tab-bg-focus-color: #1E1E3F;
+  --button-tab-bg-active-color: #4D21FC;
+  --accent-text-skill-color: #FF9D00;
+  --card-bg-color: #222244;
+  --error-color: #e95678;
+
+  /* Header */
+  --header-bg-color: #1e1e3f;
+
+  /* Explorer */
+  --explorer-bg-color: #222244;
+
+  /* Editor */
+  --editor-content-text-color: #A599E9;
+
+  /* Home */
+  --home-button-color: #fff;
+
+  // Themes 
+  --themes-button-text-color: #000;
+
+  /* Terminal */
+  --terminal-workspace-text-color: #E9EDF4;
+  --terminal-bg-color: #1e1e3f;
+  --terminal-prompt-text-color: #30c700;  
+
+  /* Footer */
+  --footer-bg-color: #1e1e3f;
+
+  /* Components */
+  --file-button-is-ative: #FFFFFF;
+  --loader-color: #A599E9;
+}
+
+
+/* GitHub Dark */
+/* ------------------------------------ */
+[data-theme='github-dark'] {
+  /* Global */
+  --main-bg-color: #24292e;
+  --main-text-color: #8B949E;
+  --interactive-element-color: #e1e4e8;
+  --interactive-element-hover-color: #a4a8af;
+  --interactive-element-focus-color: #a4a8af;
+  --interactive-element-active-color: #e1e4e8;
+  --button-bg-color: #39414a;
+  --button-hover-bg-color: #282e34;
+  --button-focus-bg-color: #282e34;
+  --button-active-bg-color: #39414a;
+  --border-color: #1b1f23;
+  --title-color: #f9826c;
+  --button-tab-bg-hover-color: #282e34;
+  --button-tab-bg-focus-color: #282e34;
+  --button-tab-bg-active-color: #39414a;
+  --accent-text-skill-color: #b392f0;
+  --card-bg-color: #1f2428;
+  --error-color: #FF5252;
+
+  /* Header */
+  --header-bg-color: #1f2428;
+  --header-text-color: #F0F6FC;
+
+  /* Explorer */
+  --explorer-bg-color: #1f2428;
+  --explorer-text-color: #C9D1D9;
+
+  /* Editor */
+  --editor-content-text-color: #F0F6FC;
+
+  /* Themes */
+  --themes-button-text-color: #0D1117;
+
+  /* Terminal */
+  --terminal-workspace-text-color: #F0F6FC;
+  --terminal-prompt-text-color: #85e89d;
+  --terminal-mode-text-color: #f9826c;
+
+  /* Components */
+  --file-button-is-ative: #F0F6FC;
+  --loader-color: #F0F6FC;
+}
+
+
+/* Calamity  */
+/* ------------------------------------ */
+[data-theme='calamity'] {
+  /* Global */
+  --main-bg-color: #2f2833;
+  --main-text-color: #EDEDED;
+  --interactive-element-color: #7e6c88;
+  --interactive-element-hover-color: #baafc0;
+  --interactive-element-focus-color: #baafc0;
+  --interactive-element-active-color: #7e6c88;
+  --button-bg-color: #3f3544;
+  --button-hover-bg-color: #372f3c;
+  --button-focus-bg-color: #372f3c;
+  --button-active-bg-color: #3f3544;
+  --border-color: #3b323f;
+  --title-color: #bc5c7d;
+  --button-tab-bg-hover-color: #372f3c;
+  --button-tab-bg-focus-color: #372f3c;
+  --button-tab-bg-active-color: #3f3544;
+  --accent-text-skill-color: #8be9fd;
+  --card-bg-color: #2a242d;
+  --error-color: #E95678;
+
+  /* Header */
+  --header-bg-color: #28242a;
+
+  /* Explorer */
+  --explorer-bg-color: #2a242d;
+
+  /* Editor */
+  --editor-tabs-bar-text-color: #918b93;
+
+  /* Terminal */
+  --terminal-text-color: #918b93;
+  --terminal-workspace-text-color: #EDEDED;
+  --terminal-bg-color: #2f2833;
+  --terminal-prompt-text-color: #23d18b;
+  --terminal-mode-text-color: #29b8db;
+
+  /* Footer */
+  --footer-bg-color: #8c5685;
+
+  /* Components */
+  --file-button-is-ative: #EDEDED;
+  --loader-color: #EDEDED;
+}
+
+
+/* Ayu Dark */
+/* ------------------------------------ */
+[data-theme='ayu-dark'] {
+  /* Global */
+  --main-bg-color: #0d1017;
+  --main-text-color: #536378;
+  --interactive-element-color: #8A8F98;
+  --interactive-element-hover-color: #565B66;
+  --interactive-element-focus-color: #565B66;
+  --interactive-element-active-color: #8A8F98;
+  --button-bg-color: #1c212b;
+  --button-hover-bg-color: #181d26;
+  --button-focus-bg-color: #181d26;
+  --button-active-bg-color: #1c212b;
+  --border-color: #1b1f29;
+  --title-color: #e6b450;
+  --button-tab-bg-hover-color: #181d26;
+  --button-tab-bg-focus-color: #181d26;
+  --button-tab-bg-active-color: #1c212b;
+  --accent-text-skill-color: #95e6cb;
+  --card-bg-color: #10131a;
+  --error-color: #ff3333;
+
+  /* Editor */
+  --editor-content-text-color: #bfbdb6;
+
+  /* Home */
+  --home-button-color: #000;
+
+  /* Themes */
+  --themes-button-text-color: #fff;
+
+  /* Terminal */
+  --terminal-workspace-text-color: #EDEDED;
+  --terminal-prompt-text-color: #9bd94c;  
+
+  /* Components */
+  --file-button-is-ative: #bfbdb6;
+  --loader-color: #bfbdb6;
+}
+
+/* Ayu Mirage */
+/* ------------------------------------ */
+[data-theme='ayu-mirage'] {
+  /* Global */
+  --main-bg-color: #1f2430;
+  --main-text-color: #6d7a8c;
+  --interactive-element-color: #8A8F98;
+  --interactive-element-hover-color: #4f5767;
+  --interactive-element-focus-color: #4f5767;
+  --interactive-element-active-color: #8A8F98;
+  --button-bg-color: #1a1f29;
+  --button-hover-bg-color: #313849;
+  --button-focus-bg-color: #313849;
+  --button-active-bg-color: #1a1f29;
+  --border-color: #191d27;
+  --title-color: #ffcc66;
+  --button-tab-bg-hover-color: #282e3b;
+  --button-tab-bg-focus-color: #282e3b;
+  --button-tab-bg-active-color: #313849;
+  --accent-text-skill-color: #7eddbc;
+  --card-bg-color: #282e3b;
+  --error-color: #ff3333;
+
+  /* Editor */
+  --editor-content-text-color: #cccac2;
+
+  /* Home */
+  --home-button-color: #fff;
+
+  // Themes  
+  --themes-button-text-color: #fff;
+
+  /* Terminal */  
+  --terminal-workspace-text-color: #EDEDED;   
+  --terminal-bg-color: #1f2430;
+  --terminal-prompt-text-color: #d5ff80;   
+
+  /* Components */
+  --file-button-is-ative: #cccac2;
+  --loader-color: #cccac2;
+}

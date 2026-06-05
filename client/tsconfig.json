@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "es2023",
+    "module": "esnext",
+    "lib": ["ES2023", "DOM", "DOM.Iterable"],
+    "types": ["vite/client"],
+    "skipLibCheck": true,
+    "removeComments": true,
+    "noEmitOnError": true,
+    "strict": true,
+    "paths": {
+      "@assets/*": ["./src/assets/*"],
+      // scripts
+      "@scripts/*": ["./src/scripts/*"],
+      "@modules/*": ["./src/scripts/modules/*"],
+      "@data/*": ["./src/scripts/data/*"],      
+      "@components/*": ["./src/scripts/components/*"],      
+      // style
+      "@style/*": ["./src/style/*"],   
+    },
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+
+    /* Linting */
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "erasableSyntaxOnly": false,
+    "noFallthroughCasesInSwitch": true
+  },
+  "include": ["src"]
+}

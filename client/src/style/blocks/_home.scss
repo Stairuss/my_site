@@ -1,0 +1,218 @@
+@use '../global/mixins' as m;
+@use '../global/variables' as v;
+
+
+.home {
+    display: none;        
+    justify-content: center;       
+    gap: 20px;
+    font-family: v.$ff-arial;            
+
+    &__title {
+        @include m.visually-hidden;
+    }
+
+    &__greetings {
+        margin: 0;
+        font-weight: 700;
+        font-size: 20px;
+        text-align: center;
+
+        @include m.viewport-sm {
+            font-size: 14px;
+        }
+    }
+
+    &__my-name {
+        margin: 0;
+        font-weight: 700;
+        font-size: 50px;
+        text-align: center;
+
+        @include m.viewport-sm {
+            font-size: 18px;
+        }
+    }
+
+    &__profile {
+
+        &-group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+        }
+
+        &-figure {
+            margin: 0;
+        }
+
+        &-photo {            
+            border-radius: v.$border-radius;
+
+            @include m.viewport-sm {
+                width: 180px;
+                height: 200px;
+            }
+        }
+
+        &-caption {
+            text-align: center;
+            color: inherit;
+        }
+
+        &-link {
+            color: var(--interactive-element-color);
+            text-decoration: none;
+            transition: color v.$transistion;
+
+            &:nth-child(1) {
+                margin-right: 10px;
+            }
+
+            &:hover {
+                color: var(--interactive-element-hover-color);
+            }
+
+            &:focus-visible {
+                outline: none;
+                color: var(--interactive-element-focus-color);
+            }
+
+            &:active {
+                color: var(--interactive-element-active-color);
+            }
+        }
+    }
+
+    &__buttons {
+        max-width: 265px; 
+        justify-self: center;      
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;        
+    }
+
+    &__button {
+        @include m.reset-button;
+        padding: 8px 24px;
+        transition: box-shadow, v.$transistion, transform v.$transistion;        
+        border-radius: v.$border-radius;
+        color: var(--home-button-color, inherit); 
+        
+        @include m.viewport-xs {
+            padding: 8px 17px;
+        }        
+
+        &:focus-visible {
+            outline: none;
+        }
+
+        &:nth-child(1) {
+            background: linear-gradient(135deg,
+                    #60c7d4 0%,
+                    #4ba3b8 50%,
+                    #3a8aa0 100%);
+            border: 1px solid #4ba3b8;
+            box-shadow:
+                0 4px 15px rgba(96, 199, 212, 0.3),
+                inset 0 1px 0 rgba(255, 255, 255, 0.2);
+
+            &:hover {
+                background: linear-gradient(135deg,
+                        #70d0dd 0%,
+                        #5bb0c1 50%,
+                        #4897a8 100%);
+                border-color: #5bb0c1;
+                box-shadow:
+                    0 6px 20px rgba(96, 199, 212, 0.4),
+                    inset 0 1px 0 rgba(255, 255, 255, 0.25);
+                transform: translateY(-1px);
+            }
+
+            &:active {
+                box-shadow:
+                    0 2px 8px rgba(96, 199, 212, 0.5),
+                    inset 0 1px 3px rgba(0, 0, 0, 0.1);
+                transform: translateY(0);
+            }
+
+            &:focus-visible {
+                box-shadow:
+                    0 0 0 3px rgba(96, 199, 212, 0.5),
+                    0 4px 15px rgba(96, 199, 212, 0.3);
+            }
+        }
+
+        &:nth-child(2) {
+            background: linear-gradient(145deg,
+                    #48bb78 0%,
+                    #38a169 100%);
+            border: 1px solid #2f855a;
+            box-shadow:
+                0 4px 15px rgba(72, 187, 120, 0.3),
+                inset 0 1px 0 rgba(255, 255, 255, 0.2);
+
+            &:hover {
+                background: linear-gradient(145deg,
+                        #56c085 0%,
+                        #45b377 100%);
+                border-color: #38a169;
+                box-shadow:
+                    0 6px 20px rgba(72, 187, 120, 0.4),
+                    inset 0 1px 0 rgba(255, 255, 255, 0.25);
+                transform: translateY(-1px);
+            }
+
+            &:active {
+                box-shadow:
+                    0 2px 8px rgba(72, 187, 120, 0.5),
+                    inset 0 1px 3px rgba(0, 0, 0, 0.1);
+                transform: translateY(0);
+            }
+
+            &:focus-visible {
+                box-shadow:
+                    0 0 0 3px rgba(72, 187, 120, 0.5),
+                    0 4px 15px rgba(72, 187, 120, 0.3);
+            }
+        }
+
+        &:nth-child(3) {
+            background: linear-gradient(145deg,
+                    #667eea 0%,
+                    #764ba2 100%);
+            border: 1px solid #5a67d8;
+            box-shadow:
+                0 4px 15px rgba(102, 126, 234, 0.3),
+                inset 0 1px 0 rgba(255, 255, 255, 0.2);
+
+            &:hover {
+                background: linear-gradient(145deg,
+                        #7580f2 0%,
+                        #845bb0 100%);
+                border-color: #667eea;
+                box-shadow:
+                    0 6px 20px rgba(102, 126, 234, 0.4),
+                    inset 0 1px 0 rgba(255, 255, 255, 0.25);
+                transform: translateY(-1px);
+            }
+
+            &:active {
+                box-shadow:
+                    0 2px 8px rgba(102, 126, 234, 0.5),
+                    inset 0 1px 3px rgba(0, 0, 0, 0.1);
+                transform: translateY(0);
+            }
+
+            &:focus-visible {
+                box-shadow:
+                    0 0 0 3px rgba(102, 126, 234, 0.5),
+                    0 4px 15px rgba(102, 126, 234, 0.3);
+            }
+        }
+    }
+
+
+}
