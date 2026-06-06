@@ -4,7 +4,7 @@
 
 
 .workspace {    
-    $height: calc(100vh - $header-height - $footer-height);    
+    $height: calc(100dvh - $header-height - $footer-height);    
 
     &__wrapper {
         display: grid;

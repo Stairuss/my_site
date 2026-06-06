@@ -2,13 +2,19 @@
 @use '../global/variables' as v;
 
 
-.sidebar {  
-    position: relative;  
+.sidebar {
+    $root: '.sidebar';
+
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 20px 20px 10px 0;
     background-color: var(--sidebar-bg-color);
+
+    @media (orientation: landscape) and (pointer: coarse) {
+        padding-top: 10px;
+    }
 
     @include m.viewport-md {
         padding-right: 10px;
@@ -20,6 +26,10 @@
         flex-direction: column;
         gap: 20px;
 
+        @media (orientation: landscape) and (pointer: coarse) {
+            gap: 15px;
+        }
+
         &-button {
             @include m.reset-button;
             position: relative;
@@ -28,6 +38,17 @@
             justify-content: center;
             transition: color v.$transistion, transform v.$transistion;
             color: var(--interactive-element-color);
+
+            @media (orientation: landscape) and (pointer: coarse) {
+                &--landscape-hidden {
+                    @include m.visually-hidden;
+                }
+
+                &::before {
+                    width: 30px;
+                    height: 30px
+                }
+            }
 
             &::before {
                 content: '';
@@ -61,12 +82,12 @@
             }
         }
 
-        &-icon {            
+        &-icon {
 
             @include m.viewport-sm {
                 width: 24px;
                 height: 24px;
             }
         }
-    }    
+    }
 }

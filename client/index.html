@@ -17,7 +17,7 @@
     <meta property="og:image" content="/my-photo.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:site_name" content="Авдеев Александр · Веб-разработчик">    
+    <meta property="og:site_name" content="Авдеев Александр · Веб-разработчик">
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <link rel="canonical" href="https://stairus-projects.ru">
     <title>Авдеев Александр · Веб-разработчик</title>
@@ -73,7 +73,7 @@
 
                     <!-- sidebar -->
                     <aside class="sidebar">
-                        <ul class="social">
+                        <ul class="social social--sidebar">
                             <li class="social__item">
                                 <a class="social__link" href="https://github.com/Stairuss" target="_blank"
                                     rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
@@ -117,7 +117,8 @@
                             </li>
                         </ul>
                         <div class="sidebar__profile-bar">
-                            <button class="sidebar__profile-bar-button" data-tab="about-me" aria-label="Обо мне">
+                            <button class="sidebar__profile-bar-button sidebar__profile-bar-button--landscape-hidden"
+                                data-tab="about-me" aria-label="Обо мне">
                                 <svg class="sidebar__profile-bar-icon" width="30" height="30" aria-hidden="true">
                                     <use href="src/assets/sprite.svg#profile-icon"></use>
                                 </svg>
@@ -345,7 +346,7 @@
                                             <div class="about-me__skill">
                                                 <svg class="about-me__skill-icon" width="50" height="50"
                                                     aria-hidden="true">
-                                                    <use href="src/assets/sprite.svg#vite-icon"></use>
+                                                    <use href="src/assets/sprite.svg#vite-icon" xlink:href="src/assets/sprite.svg#vite-icon"></use>
                                                 </svg>
                                                 <span class="about-me__skill-name">Vite</span>
                                             </div>
@@ -604,8 +605,9 @@
                                             <div class="projects__links">
                                                 <a class="projects__link" href="https://github.com/Stairuss/my_site"
                                                     target="_blank" rel="noopener noreferrer">GitHub</a>
-                                                <a class="projects__link" href="https://gitflic.ru/project/stairus/my_site"
-                                                    target="_blank" rel="noopener noreferrer">GitFlic</a>
+                                                <a class="projects__link"
+                                                    href="https://gitflic.ru/project/stairus/my_site" target="_blank"
+                                                    rel="noopener noreferrer">GitFlic</a>
                                             </div>
                                         </div>
                                     </li>
@@ -705,8 +707,8 @@
                                             <p class="contacts__error" id="contacts-message-error"></p>
                                             <label class="contacts__label" for="contacts-message">Сообщение</label>
                                             <textarea class="contacts__input contacts__input--textarea"
-                                                id="contacts-message" name="message"
-                                                placeholder="Ваше сообщение" autocomplete="off"></textarea>
+                                                id="contacts-message" name="message" placeholder="Ваше сообщение"
+                                                autocomplete="off"></textarea>
                                         </div>
                                         <button class="contacts__submit" type="submit">Отправить</button>
                                         <div class="contacts__feedback" aria-hidden="true">

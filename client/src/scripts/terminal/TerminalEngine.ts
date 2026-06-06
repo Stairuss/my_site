@@ -171,9 +171,12 @@ export class TerminalEngine {
         }
     }
 
-    /** Удаляет лишние пробелы в начале и конце введённой команды. */
+    /** 
+     * Удаляет лишние пробелы в начале и конце введённой команды.
+     *  Приводит команду к нижнему регистру.
+     */
     private normalizeInputValue(): void {
-        this.input.value = this.input.value.trim();
+        this.input.value = this.input.value.trim().toLowerCase();
     }
 
     /**

@@ -1,5 +1,7 @@
 @use '../global/_mixins' as m;
 @use '../global/_variables' as v;
+@use '_header' as *;
+@use '_footer' as *;
 
 
 .terminal {
@@ -8,7 +10,7 @@
 
     position: absolute;
     width: calc(100% + 10px);
-    height: 400px;
+    height: min(400px, 100%);
     left: 0;
     bottom: 0;
     display: none;
@@ -28,7 +30,7 @@
     }
 
     &--max-height {
-        height: 100% !important;
+        height: 100%;
     }
 
     &__title {
@@ -292,7 +294,7 @@
                 @include m.reset-list;
                 color: var(--terminal-workspace-text-color);
             }
-
+ 
             &-element {
                 display: flex;
                 align-items: center;

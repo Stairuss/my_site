@@ -343,7 +343,7 @@ class TicTacToeProcess(BaseProcess):
             self.isBotTurn = False
             return None
 
-        # Ход в слауйчайную свободную ячейку
+        # Ход в случайную свободную ячейку
         self.make_random_move(board)
         self.isBotTurn = False
 

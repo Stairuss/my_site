@@ -82,6 +82,12 @@ my_site/
 - **Качество кода:** аннотации типов, логирование, docstring (на русском), проверка `mypy`.
 - **Валидация данных через Pydantic** на всех эндпоинтах (как на вход, так и на выход).
 
+## 📊 Производительность
+
+Результат Lighthouse в Google (Performance, Accessibility, Best Practices, SEO).
+
+![Lighthouse результат](screenshots/lighthouse.png)
+
 ## 📦 Репозитории проектов
 
 - GitHub: [Stairuss](https://github.com/Stairuss)
