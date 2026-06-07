@@ -111,7 +111,7 @@ export class ContactsModule extends BaseModule {
                 .catch((err: Error) => {
                     clearTimeout(timeoutId);
                     if (err.name === 'AbortError') {
-                        this.formStateSwitch('error', 'Время ожидания истекло');
+                        this.formStateSwitch('error', 'Время ожидания ответа истекло.');
                     } else {
                         this.formStateSwitch('error');
                     }

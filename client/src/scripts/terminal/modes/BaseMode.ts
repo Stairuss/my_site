@@ -61,12 +61,17 @@ export abstract class BaseMode<TCommand extends string = string> {
      * @returns Ответ сервера, преобразованный в IResponse.
      */
     protected async sendRequest(data: IRequestMode): Promise<IResponse> {
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), 8000);
+
         const response: IResponse = await fetch(this.modeUrl, {
             method: 'POST',
             headers: HeaderManager.buildHeaders(),
             body: JSON.stringify(data),
+            signal: controller.signal,
         })
             .then(async (res) => {
+                clearTimeout(timeoutId);
                 HeaderManager.saveSessionId(res);
                 const response: IResponse = await res.json();
                 if (!response.success) {
@@ -74,8 +79,13 @@ export abstract class BaseMode<TCommand extends string = string> {
                 }
                 return response
             })
-            .catch(() => {
-                return { success: false, output: 'Что-то пошло не так. Введите: <b>exit</b> для выхода.' };
+            .catch((err: Error) => {
+                clearTimeout(timeoutId);
+                if (err.name === 'AbortError') {
+                    return { success: false, output: 'Время ожидание ответа истекло.' };
+                } else {
+                    return { success: false, output: 'Что-то пошло не так. Введите: <b>exit</b> для выхода.' };
+                }
             })
 
         return response;

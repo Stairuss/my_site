@@ -162,7 +162,11 @@ export class HeaderManager {
     static buildHeaders(): Headers {
         const headers = new Headers();
         headers.append('Content-Type', 'application/json');
-        const sessionId = localStorage.getItem('sessionId');
+        let sessionId = localStorage.getItem('sessionId');
+        if (sessionId && !/^[A-Za-z0-9]+$/.test(sessionId)) {
+            localStorage.removeItem('sessionId');
+            sessionId = null;
+        }
         if (sessionId) {
             headers.append('X-Session-Id', sessionId);
         }
