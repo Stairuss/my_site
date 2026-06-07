@@ -8,7 +8,6 @@
 
 - Главный сайт: [https://stairus-projects.ru](https://stairus-projects.ru)
 - Документация API (Swagger UI): [https://stairus-projects.ru/docs](https://stairus-projects.ru/docs)
-- Альтернативная документация (ReDoc): [https://stairus-projects.ru/redoc](https://stairus-projects.ru/redoc)
 
 ## 📌 Возможности
 
